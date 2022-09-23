@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Game from './Game';
 import App from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const Grup5 = ReactDOM.createRoot(document.getElementById('Grup5'));
+Grup5.render(
+  <App></App>
 );

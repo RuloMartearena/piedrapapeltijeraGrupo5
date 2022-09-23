@@ -1,21 +1,21 @@
-import react,{useState} from 'react';
+import {useState} from 'react';
 import Opcion from './Opcion';
 import Resultado from './Resultado';
-import '../App.css';
-    export default function Tablero() {
+    export default function Juego() {
         //estas costgantes la usaremos para guardar el ESTADO de cada Jugador
-        const [eleccionJugador, setEleccionJugador]= useState([]);
+        const [eleccionJugador, setEleccionJugador]= useState({});
                                     /**este elemento es la FUNCION
                                     a llamar para cambiar el valor de este ESTADO*/
                 /**este elemento es el que guarda 
                  el valor del estado EN ESTE CASO
                  SERA UN SECCION DE LA LISTA(osea la eleccion y derrota)*/                    
 
-        const [eleccionCpu, setEleccionCpu]= useState([]);
+        const [eleccionCpu, setEleccionCpu]= useState({});
 
         //Array cinn posibles opciones A LA HORA DE ELEGIR
         //esto facilita a la hora de determinar quien a ganado
         const opciones =[
+            
             {
                 eleccion: "piedra",
                 derrota:"tijera"
@@ -40,13 +40,14 @@ import '../App.css';
         }/**Para EJECUTAR esta funcion tenemos que pasar esta funcion como PROP al componente OPCION >(###) */
         
         const eleccionCPU =()=>{
-            const eleccion = opciones[Math.floor(Math.random()*opciones.lenght)]
+            const eleccion = opciones[Math.floor(Math.random()*2)]
             setEleccionCpu(eleccion);
         }
 
         return(
+            
             <div className="Juego">
-                <Resultado jugador={eleccionJugador} maquina={eleccionCPU}/**con esto le pasamos el estado POR PROPS el estado de un componente*//> 
+                <Resultado jugador={eleccionJugador} maquina={eleccionCpu}/**con esto le pasamos el estado POR PROPS el estado de un componente*//> 
                 <main  /**Para demostrar que como el estado cambia y se vuelve a renderizar vemos lo siguiente*/>
                     <section>
                         <div className="Jugador">Jugador</div>

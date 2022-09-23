@@ -1,0 +1,22 @@
+body {
+    background-color: #9e2a2b;
+  }
+
+.titulo {
+    text-align: center;
+    color: #FFF3B0;
+    font-size: 40px;
+}
+.nombres {
+    color:#FFF3B0;
+    margin-top: 50px;
+    list-style: none;
+    text-align: center;
+    font-size: 30px;
+}
+.grupo {
+  color:#FFF3B0;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+}

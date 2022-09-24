@@ -3,7 +3,7 @@ import Opcion from './Opcion';
 import Resultado from './Resultado';
 
 export default function Juego() {
-    const [eleccionJugador, setEleccionJugador] = useState({}); //Guarda el ESTADO de cada Jugador
+    const [eleccionJugador, setEleccionJugador] = useState({}); // Variable que guarda el ESTADO de cada Jugador
     /** setEleccionJugador es la FUNCION a llamar para cambiar el valor de este ESTADO. 
      * Este elemento es el que guarda el valor del estado.
      * EN ESTE CASO SERA UN SECCION DE LA LISTA (osea la eleccion y derrota) */
@@ -47,7 +47,7 @@ export default function Juego() {
                 <section className="section__player">
                     <h2 className="section__player__h2">Jugador</h2>
                     <div>
-                        <img src='../img/flork_player-trans.png'></img>
+                        <img src='../img/flork_player-trans.png' alt='logo jugador'></img>
                     </div>
                     <div className="section__player__choice">
                         <h3 className='section__player__choice-h3'>Elección: </h3>
@@ -72,7 +72,7 @@ export default function Juego() {
                 <section className="section__cpu">
                     <h2 className="section__cpu__h2">CPU</h2>
                     <div>
-                        <img src='../img/flork_cpu-trans.png'></img>
+                        <img src='../img/flork_cpu-trans.png' alt='logo pc'></img>
                     </div>
                     <div className="section__cpu__choice">
                         <h3 className='section__cpu__choice-h3'>Elección: </h3>

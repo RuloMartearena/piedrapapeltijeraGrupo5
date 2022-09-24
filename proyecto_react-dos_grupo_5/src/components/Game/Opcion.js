@@ -1,4 +1,3 @@
-import react from 'react';
 const Opcion=(props)=>{
     return(
         <div className="option" onClick={props.elegir}>

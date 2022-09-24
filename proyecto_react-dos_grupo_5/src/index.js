@@ -1,5 +1,4 @@
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import Game from './Game';
 import './styles/game.css';
 

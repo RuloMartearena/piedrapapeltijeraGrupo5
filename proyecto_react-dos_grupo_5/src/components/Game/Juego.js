@@ -1,74 +1,85 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import Opcion from './Opcion';
 import Resultado from './Resultado';
-    export default function Juego() {
-        //estas costgantes la usaremos para guardar el ESTADO de cada Jugador
-        const [eleccionJugador, setEleccionJugador]= useState({});
-                                    /**este elemento es la FUNCION
-                                    a llamar para cambiar el valor de este ESTADO*/
-                /**este elemento es el que guarda 
-                 el valor del estado EN ESTE CASO
-                 SERA UN SECCION DE LA LISTA(osea la eleccion y derrota)*/                    
 
-        const [eleccionCpu, setEleccionCpu]= useState({});
+export default function Juego() {
+    const [eleccionJugador, setEleccionJugador] = useState({}); //Guarda el ESTADO de cada Jugador
+    /** setEleccionJugador es la FUNCION a llamar para cambiar el valor de este ESTADO. 
+     * Este elemento es el que guarda el valor del estado.
+     * EN ESTE CASO SERA UN SECCION DE LA LISTA (osea la eleccion y derrota) */
 
-        //Array cinn posibles opciones A LA HORA DE ELEGIR
-        //esto facilita a la hora de determinar quien a ganado
-        const opciones =[
-            
-            {
-                eleccion: "piedra",
-                derrota:"tijera"
-            },
-            {
-                eleccion: "papel",
-                derrota:"piedra"
-            },
-            {
-                eleccion: "tijera",
-                derrota:"papel"
-            }
-        
-        ]
-        const elegirOpcion=(event)=>{
-            const jugador=opciones.find(e => e.eleccion === event.target.textContent); //con esto encontraremos el objeto que eligio el jugador dentro del ARRAY
-                                        /** el primer elemento del array cuyo parametro "e.eleccion"
-                                         *  es = al "textContent" debes devolvermelo*/
-            setEleccionJugador(jugador);
-            eleccionCPU();/**la llamamos en este evento para que al momento de
-             que el jugador haga su eleccion la cpu tambien lo haga*/
-        }/**Para EJECUTAR esta funcion tenemos que pasar esta funcion como PROP al componente OPCION >(###) */
-        
-        const eleccionCPU =()=>{
-            const eleccion = opciones[Math.floor(Math.random()*2)]
-            setEleccionCpu(eleccion);
+    const [eleccionCpu, setEleccionCpu] = useState({});
+
+    //Array con posibles opciones A LA HORA DE ELEGIR esto facilita a la hora de determinar quien a ganado    
+    const opciones = [
+        {
+            eleccion: "piedra",
+            derrota: "tijera"
+        },
+        {
+            eleccion: "papel",
+            derrota: "piedra"
+        },
+        {
+            eleccion: "tijera",
+            derrota: "papel"
         }
+    ]
 
-        return(
-            
-            <div className="Juego">
-                <Resultado jugador={eleccionJugador} maquina={eleccionCpu}/**con esto le pasamos el estado POR PROPS el estado de un componente*//> 
-                <main  /**Para demostrar que como el estado cambia y se vuelve a renderizar vemos lo siguiente*/>
-                    <section>
-                        <div className="Jugador">Jugador</div>
-                        <div className="eleccion">{eleccionJugador.eleccion}</div>
-                    </section>
-                    <section>
-                        <div className="CPU">CPU</div>
-                        <div className="eleccion">{eleccionCpu.eleccion}</div>
-                    </section>
+    // Para EJECUTAR esta funcion tenemos que pasar esta funcion como PROP al componente OPCION >(###)
+    const elegirOpcion = (event) => {
+        const jugador = opciones.find(e => e.eleccion === event.target.textContent); // Con esto encontraremos el objeto que eligio el jugador dentro del ARRAY
+        /** El primer elemento del array cuyo parametro "e.eleccion"
+         *  es = al "textContent" debes devolvermelo */
+        setEleccionJugador(jugador);
+        eleccionCPU(); // Se llama a este evento para que al momento de que el jugador haga su eleccion la cpu tambien lo haga
+    }
 
-                </main>
-                <div className="opcion">
-                {
-                    opciones.map((e,index) =><Opcion 
-                                                elegir={elegirOpcion} /*>(###)*/ 
-                                                valor={opciones[index]}/>)//aqui llamamos al componente que queremos renderizar
-                    /**Con esto traemos el                                     //esto muestra las 3 opciones a elegir en pantalla
-                     elemento y el indice
-                     */
-                }
-                </div>
-            </div>
-        );
-    };
+    const eleccionCPU = () => {
+        const eleccion = opciones[Math.floor(Math.random() * 2)]
+        setEleccionCpu(eleccion);
+    }
+
+    return (
+        <main className="main__conteiner-game">
+            <h2 className='h2__title'>Piedra Papel o Tijeras</h2>
+            <section className='section__game'>
+                <section className="section__player">
+                    <h2 className="section__player__h2">Jugador</h2>
+                    <div>
+                        <img src='../img/flork_player-trans.png'></img>
+                    </div>
+                    <div className="section__player__choice">
+                        <h3 className='section__player__choice-h3'>Elección: </h3>
+                        {eleccionJugador.eleccion}
+                    </div>
+                </section>
+                <section className='section__gameplay'>
+                    <div className="gameplay__div-result">
+                        <Resultado jugador={eleccionJugador} maquina={eleccionCpu} />
+                    </div>
+                    <div className="gameplay__div-choices">
+                        {
+                            opciones.map((e, index) => <Opcion
+                                elegir={elegirOpcion}
+                                valor={opciones[index]} />)
+                        }
+                    </div>
+                    <div className='gameplay__div-marker'>
+                        Marcador:
+                    </div>
+                </section>
+                <section className="section__cpu">
+                    <h2 className="section__cpu__h2">CPU</h2>
+                    <div>
+                        <img src='../img/flork_cpu-trans.png'></img>
+                    </div>
+                    <div className="section__cpu__choice">
+                        <h3 className='section__cpu__choice-h3'>Elección: </h3>
+                        {eleccionCpu.eleccion}
+                    </div>
+                </section>
+            </section>
+        </main>
+    );
+};

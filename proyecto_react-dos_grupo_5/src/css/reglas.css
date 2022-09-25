@@ -1,0 +1,18 @@
+body{
+    background-color: #355C67;
+}
+
+.div{
+    text-align: center;
+}
+
+.title{
+    color: #FFF3B0;
+    margin-left: 25px;
+}
+
+.list{
+    color: #FFF3B0;
+    font-size: 25px;
+    list-style: none;
+}

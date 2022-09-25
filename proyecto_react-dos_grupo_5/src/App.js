@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Juego from './components/game/Juego';
+
 export default function Game() {
     return (
         <>

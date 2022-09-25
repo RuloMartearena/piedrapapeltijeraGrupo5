@@ -1,120 +1,120 @@
 :root {
-    --var-colorBackground: #335C67;
-    --var-colorFont: #FFF3B0;
-    --var-colorElementOne: #E09F3E;
-    --var-colorElementTwo: #9E2A2B;
-    --var-colorElementThree: #540B0E;
+  --var-colorBackground: #335c67;
+  --var-colorFont: #fff3b0;
+  --var-colorElementOne: #e09f3e;
+  --var-colorElementTwo: #9e2a2b;
+  --var-colorElementThree: #540b0e;
 }
 
 body {
-    background-color: var(--var-colorBackground);
-    color: var(--var-colorFont);
-    font-family: 'Crimson Text', serif;
-    margin: 0;
+  background-color: var(--var-colorBackground);
+  color: var(--var-colorFont);
+  font-family: "Crimson Text", serif;
+  margin: 0;
 }
 
 .h2__title {
-    text-align: center;
-    font-size: 50px;
-    background-color: var(--var-colorElementThree);
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--var-colorElementThree);
 }
 
 .section__game {
-    display: flex;
-    justify-content: space-around
+  display: flex;
+  justify-content: space-around;
 }
 
 .section__player {
-    width: 30%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .section__player__choice {
-    display: flex;
+  display: flex;
 }
 .section__player__choice-h3 {
-    margin-top: -4px;
-    margin-right: 4px;
+  margin-top: -4px;
+  margin-right: 4px;
 }
 .div__result-player {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .img__result-player {
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    display: block;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  display: block;
 }
 
 .section__gameplay {
-    width: 30%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .gameplay__div-result {
-    font-size: 10px;
+  font-size: 10px;
 }
 .gameplay__div-choices {
-    margin-bottom: 25px;
-    cursor: pointer;
+  margin-bottom: 25px;
+  cursor: pointer;
 }
 .option {
-    margin: 10px auto;
-    font-size: 20px;
-    background-color: var(--var-colorElementTwo);
-    border: var(--var-colorFont) 1px solid;
-    border-radius: 10%;
-    width: 60px;
-    height: auto;
-    text-align: center;
+  margin: 10px auto;
+  font-size: 20px;
+  background-color: var(--var-colorElementTwo);
+  border: var(--var-colorFont) 1px solid;
+  border-radius: 10%;
+  width: 60px;
+  height: auto;
+  text-align: center;
 }
 
 .section__cpu {
-    width: 30%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .section__cpu__choice {
-    display: flex;
+  display: flex;
 }
 .section__cpu__choice-h3 {
-    margin-top: -4px;
-    margin-right: 4px;
+  margin-top: -4px;
+  margin-right: 4px;
 }
 .div__result-cpu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .img__result-cpu {
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    display: block;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  display: block;
 }
 
 .div__result-empate {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .img__result-empate {
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    display: block;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  display: block;
 }

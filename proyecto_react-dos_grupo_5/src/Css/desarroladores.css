@@ -1,0 +1,49 @@
+:root {
+  --var-colorFont: #fff3b0;
+  --var-colorBackground: #540b0b;
+  --var-colorOne: #9e2a2b;
+  --var-colorTwo: #e09f3e;
+}
+
+body {
+  margin: 0;
+  background-color: var(--var-colorBackground);
+}
+
+.h2__desarrolladores {
+  text-align: center;
+  color: var(--var-colorFont);
+}
+.div__ul__name-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.div__ul__name-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ul__name {
+  display: flex;
+}
+li {
+  list-style: none;
+  margin: 0 10px;
+  color: var(--var-colorTwo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img__photo {
+  width: 200px;
+  height: 200px;
+}
+.h3__numeroGrupo {
+  text-align: center;
+  color: var(--var-colorFont);
+}

@@ -1,14 +1,14 @@
 :root {
   --var-colorBackground: #335c67;
-  --var-colorFont: #FFF3B0;
-  --var-colorOne: #E09F3E;
-  --var-colorTwo: #9E2A2B;
-  --var-colorThree: #540B0E;
+  --var-colorFont: #fff3b0;
+  --var-colorOne: #e09f3e;
+  --var-colorTwo: #9e2a2b;
+  --var-colorThree: #540b0e;
 }
 
 body {
   margin: 0;
-  background: linear-gradient(var(--var-colorBackground), var(--var-colorThree));
+  background-color: var(--var-colorBackground);
   color: var(--var-colorFont);
   height: 100vh;
 }
@@ -20,9 +20,9 @@ body {
   justify-content: center;
 }
 h2 {
-    font-size: 50px;
+  font-size: 50px;
 }
 p {
-    margin: 30px auto;
-    font-size: 25px;
+  margin: 30px auto;
+  font-size: 25px;
 }

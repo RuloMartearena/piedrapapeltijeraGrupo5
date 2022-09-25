@@ -2,7 +2,7 @@ function Reglas() {
     return (
         <body className="body__rules">
             <div className="div__rules-conteiner">
-                <h2>REGLAS</h2>
+                <h2><u>REGLAS</u></h2>
                 <div>
                     <p>1. Presta atención al resultado que al darle click a un boton, el juego a comenzado.</p>
                     <p>2. Elige sabiamente. ¡PIEDRA, PAPEL, TIJERAS! La maquina te espera.</p>

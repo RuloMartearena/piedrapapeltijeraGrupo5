@@ -1,4 +1,4 @@
-import '../css/recordatorio.css';
+import '../Css/recordatorio.css';
 
 function Recordatorio() {
     return (

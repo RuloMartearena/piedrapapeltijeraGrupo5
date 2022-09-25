@@ -1,4 +1,4 @@
-import '../css/reglas.css';
+import '../Css/reglas.css';
 
 function Reglas() {
     return (

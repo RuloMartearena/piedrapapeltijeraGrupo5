@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Juego from './components/Juego';
-import Banner from './components/Banner.js';
-import Recordatorios from './components/Recordatorio';
-import Reglas from './components/Reglas';
-import Desarrolladores from './components/Desarrolladores';
+import Juego from './Components/Juego';
+import Banner from './Components/Banner.js';
+import Recordatorios from './Components/Recordatorio';
+import Reglas from './Components/Reglas';
+import Desarrolladores from './Components/Desarrolladores';
 
 export default function App() {
     return (

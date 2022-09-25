@@ -1,4 +1,4 @@
-import '../css/desarroladores.css';
+import '../Css/desarroladores.css';
 
 export default function Desarroladores() {
     return (

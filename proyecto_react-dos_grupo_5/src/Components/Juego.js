@@ -67,9 +67,6 @@ export default function Juego() {
                                 valor={opciones[index]} />)
                         }
                     </div>
-                    <div className='gameplay__div-marker'>
-                        Marcador:
-                    </div>
                 </section>
                 <section className="section__cpu">
                     <h2 className="section__cpu__h2">CPU</h2>

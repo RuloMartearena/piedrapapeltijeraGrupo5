@@ -62,6 +62,7 @@ export default function Juego() {
                     <div className="gameplay__div-choices">
                         {
                             opciones.map((e, index) => <Opcion
+                                key={index}
                                 elegir={elegirOpcion}
                                 valor={opciones[index]} />)
                         }

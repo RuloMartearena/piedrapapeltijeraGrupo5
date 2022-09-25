@@ -2,7 +2,7 @@ import '../css/desarroladores.css';
 
 export default function Desarroladores() {
     return (
-        <body className='body__desarrolladores'>
+        <section className='body__desarrolladores'>
             <section className='body__desarrolladores'>
                 <h2 className="h2__desarrolladores">DESARROLADORES DEL PIEDRA, PAPEL y TIJERA</h2>
                 <div className='div__ul__name-one'>
@@ -39,6 +39,6 @@ export default function Desarroladores() {
                 </div>
                 <h3 className="h3__numeroGrupo">GRUPO 5</h3>
             </section>
-        </body>
+        </section>
     )
 }

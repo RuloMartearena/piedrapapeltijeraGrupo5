@@ -2,7 +2,7 @@ import '../css/reglas.css';
 
 function Reglas() {
     return (
-        <body className="body__rules">
+        <section className="body__rules">
             <div className="div__rules-conteiner">
                 <h2><u>REGLAS</u></h2>
                 <div>
@@ -13,7 +13,7 @@ function Reglas() {
                     <p>5. Ganaste la batalla pero no la guerra, juega a tus anchas para dar una revancha.</p>
                 </div>
             </div>
-        </body>
+        </section>
     );
 }
 export default Reglas;

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import './css/banner.css';
 import './css/reglas.css';
 import './css/desarroladores.css';
 import './css/recordatorio.css';

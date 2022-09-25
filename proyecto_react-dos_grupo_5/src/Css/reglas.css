@@ -7,10 +7,10 @@
 }
 
 body {
-  margin: 0;
   background-color: var(--var-colorBackground);
   color: var(--var-colorFont);
   height: 100vh;
+  margin: 0;
 }
 .div__rules-conteiner {
   margin: 10px 20px;
@@ -20,7 +20,7 @@ body {
   justify-content: center;
 }
 h2 {
-  font-size: 50px;
+  font-size: 40px;
 }
 p {
   margin: 30px auto;

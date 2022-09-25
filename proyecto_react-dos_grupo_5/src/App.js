@@ -1,20 +1,20 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Juego from './components/game/Juego';
+import Juego from './components/Juego';
 import Banner from './components/Banner.js';
-import Recordatorio from './components/Recordatorio';
+import Recordatorios from './components/Recordatorio';
 import Reglas from './components/Reglas';
-import Desarroladores from './components/Desarroladores';
+import Desarrolladores from './components/Desarrolladores';
 
 export default function App() {
     return (
         <>
             <BrowserRouter>
                 <Routes>
-                    {/* <Route path="/" element={<Banner />}/>*/}
+                    <Route path="/" element={<Banner />}/>
                     <Route path="Juego" element={<Juego />} />
-                    {/* <Route path="/" element={<Recordatorio />}/>*/}
-                    {/* <Route path="/" element={<Desarroladores />}/>*/}
-                    {/* <Route path="/" element={<Reglas />}/>*/}
+                    <Route path="Recordatorios" element={<Recordatorios />}/>
+                    <Route path="/Desarrolladores" element={<Desarrolladores />}/>
+                    <Route path="/Reglas" element={<Reglas />}/>
                 </Routes>
             </BrowserRouter>
         </>

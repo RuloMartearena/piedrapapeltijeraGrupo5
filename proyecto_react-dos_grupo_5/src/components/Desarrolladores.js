@@ -1,3 +1,5 @@
+import '../css/desarroladores.css';
+
 export default function Desarroladores() {
     return (
         <body className='body__desarrolladores'>

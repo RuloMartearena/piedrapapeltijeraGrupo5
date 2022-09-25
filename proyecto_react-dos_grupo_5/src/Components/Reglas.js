@@ -1,3 +1,5 @@
+import '../css/reglas.css';
+
 function Reglas() {
     return (
         <body className="body__rules">

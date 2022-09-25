@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Opcion from './Opcion';
 import Resultado from './Resultado';
+import '../css/game.css';
 
 export default function Juego() {
     const [eleccionJugador, setEleccionJugador] = useState({}); // Variable que guarda el ESTADO de cada Jugador

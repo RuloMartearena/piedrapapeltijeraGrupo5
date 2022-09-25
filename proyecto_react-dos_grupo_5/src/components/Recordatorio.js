@@ -1,3 +1,5 @@
+import '../css/recordatorio.css';
+
 function Recordatorio() {
     return (
         <section>

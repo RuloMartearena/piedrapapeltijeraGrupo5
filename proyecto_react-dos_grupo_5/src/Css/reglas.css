@@ -1,0 +1,28 @@
+:root {
+  --var-colorBackground: #335c67;
+  --var-colorFont: #fff3b0;
+  --var-colorOne: #e09f3e;
+  --var-colorTwo: #9e2a2b;
+  --var-colorThree: #540b0e;
+}
+
+body {
+  background-color: var(--var-colorBackground);
+  color: var(--var-colorFont);
+  height: 100vh;
+  margin: 0;
+}
+.div__rules-conteiner {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  font-size: 40px;
+}
+p {
+  margin: 30px auto;
+  font-size: 25px;
+}

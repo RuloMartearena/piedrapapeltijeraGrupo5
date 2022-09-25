@@ -1,9 +1,8 @@
 import ReactDOM from 'react-dom/client';
-import Game from './Game';
-import './styles/game.css';
+import App from './App';
 
 const Grup5 = ReactDOM.createRoot(document.getElementById('Grup5'));
 Grup5.render(
-  <Game>
-  </Game>
+  <App>
+  </App>
 );

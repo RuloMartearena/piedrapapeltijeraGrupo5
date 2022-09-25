@@ -1,5 +1,5 @@
 import Reglas from './components/Reglas';
-import Desarroladores from './components/desarroladores';
+import Desarroladores from './components/Desarroladores';
 
 function App() {
   return (
